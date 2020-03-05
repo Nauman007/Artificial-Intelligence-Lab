@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+    <category>
+        <pattern>*</pattern>
+        <template>Bht dukh k sath btana chahta hon mere developer ne mjje is
+	    qabil nh bnaya k me iska jwab dey skun .. SORRY :(
+	    <br/><br/>Ya Check krein kia spelling theek hain tmary?
+	    <br/><br/>Type "Info" to know what i can do ;)
+	    </template>
+	</category>
+
+
+
+         <category>
+            <pattern>I AM * </pattern>
+            <template>Nice to meet you!  <get name = "fname"/> 😍 <br/> <br/>Type info to see what i can do! ;)</template>
+        </category>
+
+        <category>
+            <pattern> _ NAME _ *</pattern>
+            <template>nice to meet you! <set name = "fname"><star index= "3"/> 😍</set>
+            <br/><br/> Type info to see what i can do! ;) </template>
+            </category>
+
+
+
+    <category>
+        <pattern>INFO</pattern>
+        <template>
+            So <get name = "fname"/>, meri jaaan 😘 me ye darj kaam achay say kr skta hun! <br/>
+
+                ====>> Type "Mobile Oil" to get info for mobile oil suggestions. 😜 OR
+                ====>> Type "More info" ... well see for yourself what happens. 😎
+
+        </template>
+    </category>
+
+
+ <category>
+        <pattern>HELLO</pattern>
+        <template><srai>HI</srai></template>
+    </category>
+
+    <category>
+        <pattern>HI </pattern>
+        <template>
+            <random>
+               <li> hi  <get name = "fname"/>! ,Type Info to see what happens  </li>
+               <li> hello  <get name = "fname"/>! how are you, Type Info to see what happens</li>
+               <li>  hello  <get name = "fname"/>! i have been waiting for u, Type Info to see what happens </li>
+            </random>
+
+        </template>
+    </category>
+ <category>
+        <pattern>HY</pattern>
+        <template><random>
+               <li> hi there  <get name = "fname"/>! Type Info to see what happens</li>
+               <li> hello  <get name = "fname"/>! how are you ,Type Info to see what happens</li>
+               <li>  hello <get name = "fname"/>! i have been waiting for u, Type Info to see what happens </li>
+            </random></template>
+    </category>
+
+
+    <category>
+        <pattern>HI</pattern>
+        <template><srai>HY</srai> </template>
+    </category>
+
+
+    <category>
+        <pattern>SALAAM</pattern>
+        <template><random>
+               <li> hi there!, Type Info to see what happens   </li>
+               <li> hello! how are you, Type Info to see what happens</li>
+               <li>  hello! i have been waiting for u, Type Info to see what happens </li>
+            </random> </template>
+    </category>
+
+
+
+
+
+
+
+
+
+
+
+    <category>
+        <pattern>MOBILE OIL</pattern>
+        <template>
+
+                If you are using honda cd 70 or anyother 70cc bike
+                        you can use ZIC 20w40 <br/>Purchase oil from any company but it should have 20w40 viscosity!  
+                 If you are using honda CG 125 or anyother 125cc bike
+                        you can use ZIC 10w40 <br/>Purchase oil from any company but it should have 10w40 viscosity!  
+                
+                    <link>
+                        <text>Please Visit this link for information 😁</text>
+                        <url>https://www.youtube.com/watch?v=Gw693vHSAts</url>
+                        </link>
+                  
+            
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>MORE INFO</pattern>
+        <template>
+
+                Always Change your oil  after evry 1000km for great performance!   ,
+                Air pressure in the tires for 70cc should be: <br/>Front Wheel 28psi <br/>Back wheel 35psi,
+                Air pressure in the tires for 125cc should be: <br/>Front Wheel 30psi <br/>Back wheel 40psi  
+                
+                    <link>
+                        <text>visit me for more 😝😈</text>
+                        <url>https://www.quora.com/Why-do-bicycle-wheels-usually-require-more-pressure-than-those-of-a-car-despite-having-to-support-5-times-give-or-take-a-stone-more-weight-per-axle</url>
+                    </link>
+                  
+
+        </template>
+    </category>
+
+
+</aiml>
